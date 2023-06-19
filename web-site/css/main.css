@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+main{
+    width: 1066px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main h1{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+main #container{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+main #container .contant{
+    width: 230px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+main #container .contant .large{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main #container .contant .large .icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main #container .contant .large .icon .material-icons{
+    font-size: 34px;
+}
+main #container .contant .large .icon span:last-child{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+main #container .contant .large .bigbox{
+    width: 100%;
+    margin-top: 20px;
+}
+main #container .contant .large .bigbox .smallbox{
+    width: 100%;
+    text-align: center;
+    background: #F0F0F0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+main #container .contant .large .bigbox .smallbox button{
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    background: #F0F0F0;
+    outline: none;
+    border-radius: 5px;
+    padding: 11px 10px;
+}
+main #container .contant .large .bigbox .smallbox span{
+    font-size: 14px;
+    text-align: center;
+}
+main #container .contant .large .bigbox .sample{
+    padding: 10px;
+}
+main #search{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    margin-top: 130px;
+
+}
+main #search span{
+    width: 35px;
+    /* border: 1px solid #000000; */
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2px 0px;
+    user-select: none;
+}
+main #search input{
+    width: calc(100% - 35px);
+    font-size: 17px;
+    padding: 10px 7px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.modes{
+    background: rgb(51, 54, 63);
+}

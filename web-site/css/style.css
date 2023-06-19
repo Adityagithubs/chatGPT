@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+header{
+    width: 300px;
+    background: #27292c;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+}
+header nav #new{
+    width: 100%;
+    border: 1px solid rgb(117, 117, 117);
+    display: flex;
+    text-align: left;
+    align-items: center;
+    border-radius: 4px;
+    padding: 10px;
+    user-select: none;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+header nav #new:active{
+    transform: scale(0.9);
+}
+header nav #new span:last-child{
+    font-size: 16px;
+    margin-left: 5px;
+}
+header nav #new span:first-child{
+    font-size: 20px;
+    color: rgb(219, 217, 217);
+    margin-left: 5px;
+}
+header nav #btnbox{
+    width: 100%;
+    margin-top: 270px;
+    background: #27292c;
+    border-top: 1px solid rgb(117, 117, 117);
+}
+#some{
+    text-align: center;
+    margin-top: 20px;
+}
+#some p{
+    color: rgb(143, 143, 143);
+    user-select: none;
+    font-size: 14px;
+}
+header nav #btnbox .btns{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    transition: all ease 0.3s;
+    user-select: none;
+    align-items: center;
+    border-radius: 4px;
+    padding: 20px 10px 0 10px;
+    margin-bottom: 10px;
+}
+header nav #btnbox .btns span:first-child{
+    font-size: 20px;
+    color: rgb(219, 217, 217);
+    margin-left: 5px;
+}
+header nav #btnbox .btns span:last-child{
+    font-size: 16px;
+    margin-left: 5px;
+}
+header nav #btnbox .btns:active{
+    transform: scale(0.9);
+}
