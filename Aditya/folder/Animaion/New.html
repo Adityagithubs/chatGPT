@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta</title>
+    <style>
+
+        #img1{
+            width: 200px;
+            margin-left: 590px;
+            margin-top: 200px;
+            height: 200px;
+            /* background: linear-gradient(150deg,#FF1E1E,#FF1E1E,#FF9551,#FFFF00); */
+            animation-name: box;
+            position: relative;
+            animation-duration: 2.3s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+        #img2{
+            width: 52px;
+            height: 90px;
+            margin-left: 100px;
+            margin-bottom: 20px;
+            animation-name: cur;
+            position: relative;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            transition: all ease 0.3s;
+        }
+        @keyframes cur {
+            0%{
+                margin-left: 150px;
+            }25%{
+                margin-left: 150px;
+            }50%{
+                margin-left: 150px;
+            }75%{
+                margin-left: -60px;
+            }100%{
+                margin-left: -60px;
+            }
+        }
+        @keyframes box {
+            0%{
+                transform: scale(1);
+            }25%{
+                transform: scale(1);
+            }50%{
+                transform: scale(1);
+            }75%{
+                transform: scale(0.9);
+            }100%{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img id="img1" src="instagram.png" alt="">
+    <img id="img2" src="cursor.png" alt="">
+</body>
+</html>

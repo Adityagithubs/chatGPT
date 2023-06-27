@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+main{
+    width: 1200px;
+    margin: auto;
+    max-width: 100%;
+    margin-top: 70px;
+}
+main #conatiner{
+    max-width: 100%;
+    width: 100%;
+    padding: 0 20px;
+}
+main #conatiner h1{
+    font-size: 48px;
+    font-weight: 610;
+    margin-bottom: 10px;
+}
+main #conatiner #contant{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: -12px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main #conatiner #contant #img{
+    max-width: 100%;
+    width: 100%;
+}
+main #conatiner #contant #img img{
+    width: 250px;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+    border: 3px solid black;
+}
+main #conatiner #contant #img img:hover{
+    transform: scale(1.2);
+}
+main #conatiner #contant #box{
+    width: 600px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background: rgb(124, 113, 113); */
+
+}
+main #conatiner #contant #box .smallbox{
+    width: 280px;
+    margin-bottom: 20px;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+    transition: all ease 0.3s;
+    align-items: center;
+}
+main #conatiner #contant #box .smallbox img{
+    width: 40px;
+}
+main #conatiner #contant #box .smallbox:hover{
+    transform: scale(1.5);
+}
+main #conatiner #contant #box .smallbox span{
+    font-size: 25px;
+}
+main #conatiner #details{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+main #conatiner #details h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+main #conatiner #details p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+main #conatiner #details a button{
+    width: 300px;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 7px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #8F43EE;
+    color: white;
+}
+main #conatiner #details p:last-child{
+    margin-top: 100px;
+}
+main #conatiner #details img{
+    width: 100px;
+    margin-bottom: -60px;
+    margin-top: -30px;
+    transition: all ease 0.3s;
+}
+main #conatiner #details img:hover{
+    transform: scale(1.4);
+}
+@media (max-width: 600px) {
+    main #conatiner h1{
+        text-align: center;
+    }
+    main #conatiner #contant{
+        text-align: center;
+        flex-direction: column;
+    }
+    main #conatiner #contant #box{
+        width: 290px;
+    }
+    main #conatiner #contant #box .smallbox span{
+        font-size: 20px;
+    }
+}

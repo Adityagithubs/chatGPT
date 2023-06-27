@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+main{
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+main #container{
+    margin-top: 50px;
+    width: 100%;
+}
+main #container h1{
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin: 0 10px;
+    color: #2c2c2c;
+}
+main #container #contant{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    background: #2c2c2c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+main #container #contant .box{
+    width: 180px;
+    text-align: center;
+}
+main #container #contant .box .img img{
+    width: 150px;
+}
+main #container #contant .box .name span{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+@media (max-width: 1200px) {
+    main{
+        padding: 0 20px;
+    }
+    main #container #contant{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    main #container h1{
+        font-size: 40px;
+    }
+    main #container #contant .box{
+        margin-top: 20px;
+    }
+}

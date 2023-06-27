@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#conatiner{
+    /* width: 1100px; */
+    background: #00D1FF;
+    padding: 30px;
+    max-width: 96%;
+    border-radius: 10px;
+}
+#conatiner h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+#conatiner table{
+    border: 1px solid white;
+    width: 1000px;
+    max-width: 100%;
+    border-collapse: collapse;
+    background: #00D1FF;    
+    text-align: center;
+}
+#conatiner table tbody tr td{
+    border: 1px solid white;
+    padding: 7px 0px;
+    color: white;
+    font-size: 16px;
+}
+#conatiner table thead tr th{
+    padding: 10px 0px;
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+    border: 1px solid white;
+}
+@media (max-width: 750px) {
+    #conatiner h2{
+        font-size: 29px;
+    }
+    #conatiner{
+        overflow: auto;
+        padding: 20px;
+    }
+    
+    #conatiner table{
+        min-width: 700px;
+        /* width: 700px;     */
+    }
+
+    #conatiner table th{
+        padding: 7px;
+        font-size: 16px;
+    }
+
+    #conatiner table td{
+        padding: 5px;
+        font-size: 14px;
+    }
+}

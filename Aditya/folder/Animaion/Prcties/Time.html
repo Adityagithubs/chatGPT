@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Oswald', sans-serif;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #container{
+            width: 230px;
+            padding: 20px 0;
+            background: rgb(0, 204, 255);
+            height: 210px;
+            border-radius: 2000000px;
+        }
+        #container #time{
+            width: 80%;
+            margin: auto;
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #container #day{
+            width: 45%;      
+            margin: auto;
+            display: flex;
+            margin-bottom: 30px;
+            margin-top: 8px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #container #time h1{
+            font-size: 25px;
+            color: white;
+        }
+        #container #time span{
+            color: white;
+            font-size: 30px;
+            font-weight: 500;
+        }
+        #container #day h1{
+            color: white;
+            font-size: 16px;
+        }
+        #container #menus{
+            height: 0px;
+            overflow: hidden;
+        }
+        #container #menus img{
+            width: 30px;
+        }
+        #container #menus div{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 35px;
+            margin-bottom: 10px;
+        }
+        #container #menus img#you{
+            width: 35px;
+            height: 30px;
+        }
+        #container #menus img#chro{
+            width: 30px;
+            height: 30px;
+        }
+        #container #menu{
+
+            width: 100%;
+            text-align: center;
+        }
+        #container #menu img{
+            width: 30px;
+            margin-top: 0px;
+        }
+        #container #menus.imgs{
+            height: fit-content;
+            margin-top: 35px;
+            margin-bottom: 10px;
+        }
+        #container #contant{
+            margin-bottom: 20px;
+        }
+        #container #contant.time{
+            height: 0px;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="contant">
+            <div id="time">
+                <h1 id="hour"></h1>
+                <span>:</span>
+                <h1 id="minute"></h1>
+                <span>:</span>
+                <h1 id="second"></h1>
+            </div>
+            <div id="day">
+                <h1 id="dates"></h1>
+                <h1 id="month"></h1>
+                <h1 id="year"></h1>
+            </div>
+        </div>
+        <div id="menus">
+            <div>
+                <img src="phone-call.png" alt="">
+                <img src="music.png" alt="">
+                <img id="you" src="YouTube.png" alt="">
+            </div>
+            <div>
+                <img src="messages.png" alt="">
+                <img src="battery.png" alt="">
+                <img id="chro" src="Google_Chrome.png" alt="">
+            </div>
+            
+        </div>
+        <div id="menu">
+            <img id="btn" src="menu.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        let hour = document.getElementById('hour')
+        let minute = document.getElementById('minute')
+        let second = document.getElementById('second')
+        let dates = document.getElementById('dates')
+        let monthes = document.getElementById('month')
+        let years = document.getElementById('year')
+        let menu = document.getElementById('btn')
+        let menus = document.getElementById('menus')
+        let contant = document.getElementById('contant')
+
+        setInterval (mytimer,1000)
+        function mytimer(){
+        let time = new Date();
+        let Hourse = time.getHours();
+        let minutes = time.getMinutes();
+        let seconds = time.getSeconds();
+        let Dates = time.getDate();
+        let Month = time.getMonth();
+        let Year = time.getFullYear();
+        let showHourse = Hourse;
+        let showminutes = minutes;
+        let showseconds = seconds;
+        let showDates = Dates;
+        let showMonth = Month;
+        let showYear =   Year;
+        hour.innerHTML = showHourse;
+        minute.innerHTML = showminutes;
+        second.innerHTML = showseconds;
+        dates.innerHTML = showDates;
+        monthes.innerHTML = showMonth;
+        years.innerHTML = showYear;
+        
+        }
+        menu.addEventListener('click',function(){
+            menus.classList.toggle('imgs');
+            contant.classList.toggle('time');
+        })
+        
+
+                      
+
+
+
+
+
+    </script>
+
+</body>
+</html>

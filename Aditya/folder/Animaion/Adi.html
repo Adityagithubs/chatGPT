@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animation</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            /* background: linear-gradient(150deg,#FF1E1E,#FF1E1E,#FF9551,#FFFF00); */
+            animation-name: box;
+            position: relative;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+        @keyframes box {
+            0%{
+                left: 0;
+                background: #FF1E1E;
+                border-radius: 0;
+            }25%{
+                left: 13%;
+                top: 0;
+                border-radius: 20px;
+                transform: rotate(260deg) translate(300px, 200px);
+                background: #FF1E1E;
+            }50%{
+                left: 43%;
+                background: rgb(2, 150, 150);
+                transform: rotate(260deg) translate(300px, 200px);
+                border-radius: 40px;
+                top: 530px;
+            }75%{
+                left: 100px;
+                border-radius: 60px;
+                background: rgb(0, 197, 197);
+                transform: rotate(260deg) translate(300px, 200px);
+                top: 530px;
+            }100%{
+                left: 0;
+                top: 0;
+                transform: rotate(360deg) translate(300px, 200px);
+                background: cyan;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+    </div>
+</body>
+</html>

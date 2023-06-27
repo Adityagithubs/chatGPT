@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Slab', serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background: url(wa.jpg);
+        }
+        #container{
+            padding: 20px;
+            border: 2px solid white;
+        }
+        #container h1{
+            color: white;
+            font-size: 50px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: -20px;
+        }
+        #form{
+            width: 1040px;
+            border-radius: 10px;
+            max-width: 100%;
+            padding: 20px;
+            margin-top: 40px;
+            background: transparent;
+        }
+        #form form div{
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #form form div .input{
+            border: 1px solid white;
+            font-weight: 500;
+            background: rgb(223, 223, 223);
+            outline: none;
+            color: rgb(0, 0, 0);
+            margin-bottom: 5px;
+            padding: 5px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 50%;
+        }
+        #form form p{
+            /* display: none; */
+            font-size: 25px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: white;
+
+        }
+        #form form p:last-child{
+            margin-top: 20px;
+            margin-bottom: -10px;
+        }
+        #form form div .input:last-child{
+            margin-left: 20px;
+        }
+        #form form div .input::placeholder{
+            color: rgb(68, 68, 68);
+        }
+        #form form textarea::placeholder{
+            color: rgb(68, 68, 68);
+        }
+        #form form textarea{
+            width: 100%;
+            margin: 10px 0;
+            resize: none;
+            max-width: 100%;
+            border: 1px solid white;
+            font-weight: 500;
+            background: rgb(223, 223, 223);
+            outline: none;
+            font-size: 16px;
+            padding: 5px 15px;
+            margin-bottom: 10px;
+            margin-top: -0px;
+            border-radius: 5px;
+            height: 80px;
+        }
+        #form form button{
+            width: 100%;
+            outline: none;
+            font-size: 18px;
+            max-width: 100%;
+            border: 1px solid white;
+            font-weight: 500;
+            background: rgb(223, 223, 223);
+            color: rgb(0, 0, 0);
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+        a button{
+            width: 300px;
+            font-size: 30px;
+            font-weight: 500;
+            background-color: #8F43EE;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            padding: 10px 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Form</h1>
+        <div id="form">
+            <form>
+                <p id="input1"></p>
+                <p id="input2"></p>
+                <div>
+                    <input type="text" class="input" id="in1" placeholder="Name">
+                    <input type="text" class="input" id="in2" placeholder="Phone">
+                </div>
+                <p id="input3"></p>
+                <textarea id="in3" placeholder="Message..."></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+    <a href="../Web-site3/web.html"><button>Go Back</button></a>
+        <script src="web.js"></script>
+    </body>
+    </html>
