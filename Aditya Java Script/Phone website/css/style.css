@@ -1,0 +1,197 @@
+
+header{
+    width: 100%;
+    max-width: 100%;
+    background: var(--Main-Color);
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 0;
+}
+header nav{
+    width: 1300px;
+    max-width: 100%;
+    padding: 0 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a{
+    text-decoration: none;
+}
+header nav #head a #heading{
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    text-decoration: none;
+    margin-top: 10px;
+}
+header nav #head a #heading h1{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 2px;
+}
+
+header nav #search{
+    width: 800px;
+    margin-top: 10px;
+    border: 1px solid var(--Second-Main);
+    background: var(--Second-Main);
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+    height: 35px;
+}
+
+header nav #search span{
+    color: var(--Main-Color);
+    width: 35px;
+    font-size: 30px;
+}
+header nav #search input{
+    width: calc(100% - 40px);
+    height: 100%;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: none;
+    padding-left: 10px;
+}
+header nav #button{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: center;
+}
+header nav #button a{
+    width: 300px;
+}
+header nav #button a button{
+    width: 80%;
+    padding: 5px 0;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+header nav #button a button:active{
+    transform: scale(0.9);
+    color: white;
+    background: var(--Hover-Color);
+    border-radius: 6px;
+}
+header nav #contant{
+    width: 810px;
+    margin-bottom: 5px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav #contant #head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav #contant #head span{
+    color: var(--Second-Main);
+    display: none;
+    margin-top: 20px;
+    height: 0px;
+}
+
+main{
+    width: 1200px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+@media (max-width: 1194px) {
+    header{
+        width: 100%;
+        height: 150px;
+    }
+    header nav{
+        width: 100%;
+        right: 0;
+    }
+    header nav #button{
+        position: fixed;
+        top: 150px;
+        left: -100%;
+        overflow: hidden;
+        width: 0;
+        height: 100vh;
+        justify-content: unset;
+        background: var(--Main-Color);
+        border-top: 1px solid var(--Second-Main);
+        flex-direction: column;
+        margin: auto;
+        transition: all ease 0.3s;
+    }
+    header nav #button.active{
+        left: 0;
+        width: 100%;
+    }
+    header nav #contant #head span{
+        display: block;
+        margin-top: -15px;
+        font-size: 35px;
+    }
+    header nav #button button{
+        margin-left: 35px;
+        margin-top: 50px;
+    }
+    header nav #contant{
+        margin-top: -15px;
+        width: 100%;
+        flex-direction: column;
+    }
+    header nav #contant #search{
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+@media (max-width: 440px) {
+    header{
+        width: 100%;
+        height: 130px;
+    }
+    header nav #button{
+        position: fixed;
+        top: 130px;
+        left: -110;
+        overflow: hidden;
+        width: 0;
+        height: 100vh;
+        justify-content: unset;
+        background: var(--Main-Color);
+        border-top: 1px solid var(--Second-Main);
+        flex-direction: column;
+        margin: auto;
+        transition: all ease 0.3s;
+    }
+    header nav #button.active{
+        width: 100%;
+        left: 0;
+    }
+    header nav #button button{
+        margin-top: 50px;
+        margin-left: 35px;
+    }
+    header nav #contant{
+        flex-direction: column;
+    }
+    header nav #contant #search{
+        margin-top: 15px;
+    }
+}

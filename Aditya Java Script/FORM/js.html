@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js.css">
+    <title>Java script form</title>
+</head>
+<body>
+        <div id="container">
+            <h1>What do you want to print more times</h1>
+            <form>
+                <input type="text" placeholder="Enter what do you want to print" id="text">
+                <input type="number" id="number" placeholder="Enter how many times do you want to print">
+            <button id="btn" type="button">Print</button>
+        </form>
+    </div>
+    <div id="write"></div>
+    <script>
+        let num = document.getElementById('number')
+        let tex = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        let writ = document.getElementById('write')
+
+        btn.addEventListener('click', function(){
+            let int = num.value;
+            let string = tex.value;
+            let store = '';
+            for (let i = 0; i < int; i++) {
+                store += `<h1>${i++} - ${string}</h1>` 
+            }
+            writ.innerHTML = store;
+        })
+    </script>
+</body>
+</html>

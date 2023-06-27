@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background: #222;
+    color: white;
+}
+
+#accordionCont{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+
+.Accordion{
+    background: rgba(160, 160, 160, 0.473);
+    width: 700px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#accordionCont .accordionTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    cursor: pointer;
+    user-select: none;
+    border-bottom: 1px solid #222;
+}
+
+#accordionCont .accordionTitle h1{
+    font-size: 21px;
+}
+
+.Accordion .accordionContent{
+    padding: 0 25px;
+    word-break: break-all;
+    color: rgb(241, 241, 241);
+    height: 0;
+    transition: all ease 0.3s;
+    overflow: hidden;
+}
+
+.Accordion .accordionContent.Collaps{
+    padding: 20px 25px;
+    height: fit-content;
+}

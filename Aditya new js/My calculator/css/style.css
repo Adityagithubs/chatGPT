@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(80, 79, 79);
+}
+#container{
+    width: 300px;
+    background: white;
+    height: 440px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+#container #display{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 180px;
+    background: #36474F;
+}
+#container #display p{
+    width: 100%;
+    height: 35px;
+    margin-top: 120px;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: right;
+    color: white;
+    font-size: 30px;
+    float: right;
+}
+#container #btns{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: transparent;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #18212A;
+    padding: 10px 5px;
+}
+#container #btns .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+}
+#container #btns .top button{
+    width: 65px;
+    height: 74%;
+    border: 1px solid #18212A;
+    color: white;
+    outline: none;
+    background: #18212A;
+    font-size: 27px;
+    user-select: none;
+    border-radius: 100%;
+    text-align: center;
+}
+
+#container #btns .top button.btn{
+    width: 65px;
+    height: 74%;
+    background: #F6F6F6;
+    border: 1px solid #F6F6F6;
+    color: #18212A;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+#container #btns .top button.btn1{
+    width: 65px;
+    height: 74%;
+    background: #ff1500ef;
+    border: 1px solid #ff1500ef;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}

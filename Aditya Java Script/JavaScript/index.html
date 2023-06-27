@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    
+    <h2>Plus Your Numbers</h2>
+    <input type="number" id="Input1">
+    <input type="number" id="Input2">
+    <button id="Btn">+</button>
+    <button id="Btn">*</button>
+    <button id="Btn">/</button>
+    <button id="Btn">-</button>
+    <button id="Btn">=</button>
+    <h1 id="Result"></h1>
+
+    <script>
+
+        let Input1 = document.getElementById('Input1');
+        let Input2 = document.getElementById('Input2');
+        let Result = document.getElementById('Result');
+        let Button = document.getElementById('Btn');
+        Button.addEventListener('click', function(){
+            Result.innerHTML = parseInt(Input1.value) + parseInt(Input2.value);
+            // console.log(typeof Input1.value)
+
+        })
+
+        
+
+
+
+
+
+    </script>
+
+</body>
+</html>

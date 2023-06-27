@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+
+    <!-- 
+
+        |- Array
+        1. Get Array Values
+        2. srot() function
+        3. Join() Function
+        4. toString() funciton
+        5. Array Reassigned
+        6. length
+        7. shift()
+        8. pop()
+
+     -->
+
+    <script>
+
+        // Create Array
+        let x = ['Delhi', 'Mumbai', "Goa", "UP", "Gujarat", null, undefined];
+
+        // Array Reassigned
+        x = ["Ajay", "Ram", "Sandeep", "Karan", "Rahul", "Deep", "Naman"];
+        console.log(x);
+        console.log(x[0]);
+        console.log(x[1]);
+        console.log(x[2]);
+        console.log(x[3]);
+        console.log(x[4]);
+
+        x[8] = "Rajisthan";
+        console.log(x[10]);
+        console.log(x.sort());
+        console.log(x.toString());
+        // you can get array values with the help of array index numbers
+        console.log(x.join("  /  "));
+        console.log(x.length)
+
+        // remove the first value of the list of array
+        console.log(x.shift())
+
+        // remove the last value of the list of array
+        console.log(x.pop())
+            
+        console.log(x);
+
+
+
+
+    </script>
+
+</body>
+
+</html>

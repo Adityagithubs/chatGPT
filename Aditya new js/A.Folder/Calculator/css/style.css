@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+}
+
+#container{
+    background: #4d4d4d;
+    height:420px;
+    width: 300px;
+}
+
+#container #display{
+    height: 95px;
+    background: #252525;
+}
+
+#container #display input{
+    height: 40px;
+    float: right;
+    margin-top: 47px;
+    width: 100%;
+    text-align: right;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#container #buttons{
+    display: flex;
+    flex-direction: column;
+    height: 325px;
+}
+
+#container #buttons div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#container #buttons div button{
+    background: #585858;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 25px;
+    border: 1px solid #525252;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+
+#container #buttons div button:hover{
+    border: 1px solid #ffffff83;
+}
+
