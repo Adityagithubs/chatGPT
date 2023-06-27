@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+#container #left{
+    width: 35%;
+    background: #FF7433;
+    color: white;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    user-select: none;
+}
+#container #right{
+    width: calc(100% - 35%);
+    padding: 20px;
+    user-select: none;
+}
+#container #left h1{
+    font-size: 30px;
+    font-weight: 400;
+}
+#container #left p{
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 20px;
+}
+#container #left #contant{
+    display: flex;
+    flex-direction: column;
+}
+#container #left #contant .sbox{
+   width: 100%;
+   display: flex;
+   margin-bottom: 10px;
+   align-items: center;
+}
+#container #left #contant .sbox P{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#container #left #contant .sbox span{
+    width: 52.9px;
+    border: 1px solid white;
+    font-size: 30px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 100%;
+}
+#container #left #contant .sbox #send{
+    text-align: center;
+    padding: 7px 0;
+    width: 66.9px;
+    border: 1px solid white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#container #right h1{
+    font-size: 430;
+    font-weight: 400;
+}
+#container #right .bbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#container #right .bbox .small{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    /* margin-bottom: 5px; */
+}
+#container #right .bbox .small:last-child{
+    margin-left: 10px;
+}
+#container #right .bbox .small label{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#container #right .bbox .small input{
+    width: 299px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid rgb(190, 188, 188);
+    color: rgb(190, 188, 188);
+}
+#container #right .bbox .small input::placeholder{
+    font-size: 16px;
+}
+#container #right .small{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+#container #right .small label{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+#container #right .small input{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid rgb(190, 188, 188);
+    color: rgb(190, 188, 188);
+    margin-bottom: 15px;
+    outline: none;
+
+}
+#container #right .small input::placeholder{
+    font-size: 16px;
+}
+#container #right .small textarea{
+    width: 100%;
+    height: 60px;
+    padding: 7px;
+    border: 1px solid rgb(190, 188, 188);
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    color: rgb(190, 188, 188);
+}
+#container #right button{
+    margin-top: 15.9px;
+    width: 250px;
+    padding: 7px 0;
+    background: #FF7433;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}

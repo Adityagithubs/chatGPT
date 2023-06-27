@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Login Form</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Slab', serif;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+		.form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .login-form {
+            background-color: #ffffff;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.171);
+            border-radius: 10px;
+            padding: 30px;
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.712);
+        }
+
+        input{
+            border: 1px solid transparent;
+            background-color: #f7f7f7;
+            border-radius: 5px;
+            padding: 10px;
+            outline: none;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+         button[type="submit"] {
+            background-color: #0052cc;
+            border: none;
+            color: #ffffff;
+            font-size: 16px;
+            padding: 6px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            user-select: none;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #002080;
+        }
+        p{
+            display: none;
+            text-align: center;
+            margin-top: -19px;
+            margin-left: -110px;
+            margin-bottom: 10px;
+        }
+        p .material-icons{
+            font-size: 18px;
+            color: red;
+        }
+        p #span1{
+            font-size: 12px;
+            position: relative;
+            margin-left: 3px;
+            color: red;
+            top: -3px;
+        }
+        .alert{
+            display: block;
+            /* margin-left: 0px; */
+        }
+        #contant{
+            width: 200px;
+            /* background-color: #ffffff;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.171); */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        #contant #password{
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.171);
+            text-align: center;
+            padding: 7px 10px;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+	</style>
+</head>
+<body>
+	<div class="form-container">
+        <form class="login-form">
+          <h2>Login</h2>
+          <label for="email" class="label">Email</label>
+          <input id="email"type="text" placeholder="Enter your email">
+          <p id="p1">
+            <span class="material-icons">error</span>
+            <span id="span1">Please fill the form</span>
+          </p>
+          <label for="password" class="label">Password</label>
+          <input id="password" type="password" placeholder="Enter your password">
+          <p id="p2">
+            <span class="material-icons">error</span>
+            <span id="span1">Please fill the form</span>
+          </p>
+          <button type="submit" id="submitBtn">Login</button>
+        </form>
+        
+    </div>
+   
+
+
+    <script>
+
+        let btn = document.getElementById('submitBtn');
+
+        btn.onclick = (e) => {
+            let pass = document.getElementById('password');
+            let mail = document.getElementById('email');
+            let label1 = document.querySelectorAll('.label')[0];
+            let label2 = document.querySelectorAll('.label')[1];
+
+
+            if (mail.value == '') {
+                e.preventDefault();
+                mail.style.borderColor = "red";
+                p1.classList.add('alert');
+            }else{
+                mail.style.borderColor = '#ccc';
+                p1.classList.add('');
+            }
+            if (pass.value == '') {
+                e.preventDefault();
+                pass.style.borderColor = "red";
+                p2.classList.add('alert');
+            }else{
+                pass.style.borderColor = '#ccc';
+                p2.classList.add('');
+            }
+        }
+
+    </script>
+
+      
+</body>
+</html>
